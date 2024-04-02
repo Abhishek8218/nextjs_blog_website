@@ -89,7 +89,7 @@ const Navbar = () => {
                                     <div className='relative ml-4'>
                                         <Image
                                             onClick={handleShowDropdown}
-                                            src={userData?.avatar?.url ? userData?.avatar?.url : demoImage}
+                                            src={ userData?.avatar?.url || demoImage}
                                             alt='avatar'
                                             width={0}
                                             height={0}

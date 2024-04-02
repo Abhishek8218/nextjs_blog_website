@@ -170,7 +170,7 @@ const ProfileDetails = ({ profile, params }) => {
       <div className="flex flex-col md:flex-row gap-5">
         <div className="flex-1 space-y-3">
           <h4 className="text-xl">About Me</h4>
-          <p>{profile?.about}</p>
+          <p className="text-primaryColor">{profile?.about}</p>
         </div>
 
         <div className="flex-1 flex items-center justify-center">
@@ -188,28 +188,28 @@ const ProfileDetails = ({ profile, params }) => {
           <h4 className="text-xl">Details</h4>
 
           <div className="space-y-1">
-            <p>Email:</p>
-            <p>{profile?.email}</p>
+            <p>Email: <span className="text-primaryColor">{profile?.email}</span></p>
+            
           </div>
 
           <div className="space-y-1">
-            <p>Name:</p>
-            <p>{profile?.name}</p>
+            <p>Name:  <span className="text-primaryColor">{profile?.name}</span></p>
+           
           </div>
 
           <div className="space-y-1">
-            <p>Age:</p>
-            <p>{profile?.age}</p>
+            <p>Age:  <span className="text-primaryColor">{profile?.age}</span></p>
+           
           </div>
 
           <div className="space-y-1">
-            <p>Location:</p>
-            <p>{profile?.location}</p>
+            <p>Location: <span className="text-primaryColor">{profile?.location}</span></p>
+            
           </div>
 
           <div className="space-y-1">
-            <p>Joined:</p>
-            <p>{timeFormat()}</p>
+            <p>Joined: <span className="text-primaryColor">{timeFormat()}</span></p>
+            
           </div>
         </div>
       </div>
